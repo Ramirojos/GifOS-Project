@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Guifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/guifos_captura.css">
+</head>
+<body>
+    <header><div id="counter_bar" class="counter_bar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</div></header>
+    <div id="main_wrapper" class="lightmode">
+    <nav>
+            <div class="arrowlogo_wrapper" style="display: flex;">
+                <img id="home_arrow" class="home_arrow" src="../assets/arrow.svg" alt="back to home" style="margin: 7px;" >
+                <div class="logo_wrapper">
+                    <img id="logo" src="../assets/gifOF_logo.png" alt="" >
+                </div>
+            </div>
+    </nav>
+    <div id="crear_gifos_window" class ="crear_gifos_window">
+        <span class="header">Crear Guifos</span>
+        <div class="text_window_top">
+            <img src="../assets/window_img.png" alt="window image">
+            <h4>Aqui vas a poder crear tus propios guifos</h4>
+        </div>
+        <div class="text_window_bottom">
+            <p>Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+            <ul>
+                <li><span class="num">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                <li><span class="num">2)</span> Capturar tu momento guifo</li>
+                <li><span class="num">3)</span> Revisar el momento</li>
+                <li><span class="num">4)</span> Listo para subir y compartir!</li>
+                <li>¿Quieres comenzar a crear tu <span class="txt">guifo</span> ahora?</li> 
+            </ul>
+            
+        </div>
+        <div class="btn_wrapper">
+            <button id="cancel" class="cancel btn">Cancelar</button>
+            <button id="continue" class="continue btn">Comenzar</button>
+        </div>
+    </div>
+    <div id="success_window" class="success_window">
+        <span class="window_header">Guifo Subido Con Éxito</span>
+        <div class="window_middle">
+            <div class="gif_wrapper">
+                <img id="uploadedGif" class="gif" src="../assets/skeletonGray.png" alt="gif">
+            </div>
+            <div class="btn_wrapper">
+                <span class="txt_exito">Guifo creado con éxito</span>
+                <button class="btn_copy" id="copy">Copiar Enlace Guifo</button>
+                <button class="btn_download" id="download">Descargar Guifo</button>
+            </div>
+        </div>
+        <div class="window_bottom">
+            <button id="end_btn" class="end_btn" style="background: #F7C9F3;">Listo</button>
+        </div>
+    </div>
+    <div id="my_gifs_wrapper" class="my_gifs_wrapper">
+        <div class="my_gifs_text">Mis Guifos</div>
+        <div id="my_gifs_section" class="my_gifs_section">
+        </div>
+    </div>
+    <div id="capture_window" class="capture_window" >
+        <div class="window_header">
+            <span id="window_header_text">Un Chequeo Antes de Empezar</span>
+            <img id="x_btn" src="../assets/close.svg" alt="close button">
+        </div>
+        <div id="video_window_wrapper" class="video_window_wrapper">
+            <video class="video_container" id="video_container" src="../assets/skeletonGray.png"></video>
+            <img id="preview_gif" class="preview_gif" src="../assets/skeletonGray.png" alt="preview Gif">
+            <div id="uploading_screen" class="uploading_screen">
+                <img class="globe_img" src="../assets/globe_img.png" alt="globe image">
+                <h4>Estamos subiengo tu Gifo</h4>
+                <div class="progress_bar" >
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                    <span class="pink progress"></span>
+                </div>
+                <div class="txt_restante">Tiempo restante: <span>38 años</span> algunos minutos</div>
+            </div>
+        </div>
+        <div id="timer_wrapper" class="timer_wrapper">
+            <div class="timer">
+                00:00:00:00
+            </div>
+        </div>
+        <div class="window_btn_wrapper">
+            <div id="pre_capture" class="pre_capture_btns">
+                <button class="camera btn"><img src="../assets/camera.svg" alt="Camera Image"></button>
+                <button class="capture btn">Capturar</button>
+            </div>
+            <div id="in_capture" class="in_capture_btns">
+                <button class="target btn_red"><img src="../assets/recording.svg" alt="recording image"></button>
+                <button class="ready btn_red">Listo</button>
+            </div>
+            <div id="in_preview" class="preview_btns_wrapper">
+                    <button id="redo_btn" class="redo">Repetir Captura</button>
+                    <button id="upload_btn" class="upload">Subir Guifo</button>
+            </div>
+            <div id="in_upload" class="in_upload_btn">
+                <button class="cancel_btn" id="cancel_btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <script src="../scripts/global_variables.js"></script>
+    <script src="../scripts/gif_capture_functionality.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</body>
+</html>

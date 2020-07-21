@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.OS</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main_stylesheet.css">
+</head>
+<body >
+<header><div id="counter_bar" class="counter_bar">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</div></header>
+<div id="main_wrapper" class="lightmode">
+   <nav>
+        <div class="logo_wrapper">
+            <img id="logo" src="./assets/gifOF_logo.png" alt="Logo Guifos">
+        </div>
+        <div class="nav_func">
+            <a id="create_gifo" class="create_gif">Crear Gifos</a>
+            <div id="themes_wrapper" class="themes_wrapper">
+                <a id="theme_btn" class="theme_btn">Elegir Tema</a>
+                <a id="downarrow_btn" class="downarrow_btn">
+                    <img id="dowarrow_img" src="./assets/dropdown.svg" alt="downarrow">
+                </a>
+                <div class="themes_dropdown" id="themes_dropdown">
+                    <button id="sailor_day" class="sailor_day">
+                        <span>
+                            Sailor Day
+                        </span>
+                    </button>
+                    <button id="sailor_night" class="sailor_night">
+                        <span>
+                            Sailor Night
+                        </span>  
+                    </button>
+                </div>
+            </div>
+            <a class="my_gifs" href="./HTML_files/myGifs.html">Mis Gifos</a>
+        </div>
+    </nav>
+<div class="searchbar_wrapper">
+    <div class="search_header"><span>Buscar</span></div>
+    <div class="input_wrapper">
+        <input type="text" class="search_input" id="search_input" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+        <button id="search_btn" class="search_btn">
+                <img id="lupa_img" class="lupa_img" src="./assets/lupa_inactive.svg" alt="lupa_inactive.svg"> 
+                <span id="btn_span" class="btn_span">Buscar</span>
+        </button>
+    </div>
+    <div id="result_container" class="search_result_container">
+        
+    </div>
+</div>
+<div class="gif_search_wrapper" id="gif_search_wrapper">
+    <div id="related_btn_wrapper" class="related_btn_wrapper">
+    </div>
+    <div id="search_text_bar" class="search_text_bar"></div>
+    <div  id="gif_seach_results" class="gif_search_results">
+        
+    </div> 
+</div>
+<div class="suggestion_wrapper">
+    <div class="suggestion_text">Hoy te sugerimos</div>
+    <div id="random_gif_section" class="gifs_section">
+    </div>
+</div>
+<div id="trending_wrapper" class="trending_wrapper">
+    <div class="trending_text">Tendencias</div>
+    <div id="trending_section" class="trending_section">
+    </div>
+</div> 
+</div>
+<script src="./scripts/global_variables.js"></script>
+<script src="./scripts/styles_functionality.js"></script>
+<script src="./scripts/search_functionality.js"></script>
+<script src="./scripts/suggestions_functionality.js"></script>
+<script src="./scripts/trending_functionality.js"></script>
+
+</body>
+</html>
+
